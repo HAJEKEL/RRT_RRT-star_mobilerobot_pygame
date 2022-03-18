@@ -1,1 +1,1 @@
-# A-star_pygame
+# RRT-star_pygame
