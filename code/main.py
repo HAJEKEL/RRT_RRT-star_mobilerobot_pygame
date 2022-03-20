@@ -1,22 +1,27 @@
 import pygame
 import time
-from RRT_Star import RRTGraph
-from RRT_Star import RRTMap
-from Robot_bicycle_model import Robot
 import os
+import sys
+sys.path.append('..')
+
+from code.RRT_Star import RRTGraph
+from code.RRT_Star import RRTMap
+from code.Robot_bicycle_model import Robot
+
 
 # Select True for RRT Star or False for regular RRT
 RRT_STAR = True
 # UPDATE your project folder before running
-Projectfolder = '/home/yohan/pdm35/Final'
+Projectfolder_image = '/path/to/image'
+Projectfolder_code = '/path/to/code
 
-Background = os.path.join(Projectfolder, 'background.jpg')
-Body_Robot = os.path.join(Projectfolder, 'Body.png')
-Wheel_Robot = os.path.join(Projectfolder,'wheel.png')
-car = pygame.image.load(os.path.join(Projectfolder, 'car.png'))
-car2 = pygame.image.load(os.path.join(Projectfolder, 'car2.png'))
-car3 = pygame.image.load(os.path.join(Projectfolder, 'car3.png'))
-police = pygame.image.load(os.path.join(Projectfolder, 'police.png'))
+Background = os.path.join(Projectfolder_image, 'background.jpg')
+Body_Robot = os.path.join(Projectfolder_image, 'Body.png')
+Wheel_Robot = os.path.join(Projectfolder_image,'wheel.png')
+car = pygame.image.load(os.path.join(Projectfolder_image, 'car.png'))
+car2 = pygame.image.load(os.path.join(Projectfolder_image, 'car2.png'))
+car3 = pygame.image.load(os.path.join(Projectfolder_image, 'car3.png'))
+police = pygame.image.load(os.path.join(Projectfolder_image, 'police.png'))
 
 dimensions = (1000, 1000) # -y x
 start = (25, 50)
