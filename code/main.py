@@ -4,16 +4,16 @@ import os
 import sys
 sys.path.append('..')
 
-from code.RRT_Star import RRTGraph
-from code.RRT_Star import RRTMap
-from code.Robot_bicycle_model import Robot
+from RRT_Star import RRTGraph
+from RRT_Star import RRTMap
+from Robot_bicycle_model import Robot
 
 
 # Select True for RRT Star or False for regular RRT
 RRT_STAR = True
 # UPDATE your project folder before running
 Projectfolder_image = '/path/to/image'
-#Projectfolder_code = '/path/to/code
+
 
 Background = os.path.join(Projectfolder_image, 'background.jpg')
 Body_Robot = os.path.join(Projectfolder_image, 'Body.png')
