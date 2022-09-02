@@ -13,7 +13,7 @@ from code.Robot_bicycle_model import Robot
 RRT_STAR = True
 # UPDATE your project folder before running
 Projectfolder_image = '/path/to/image'
-Projectfolder_code = '/path/to/code
+#Projectfolder_code = '/path/to/code
 
 Background = os.path.join(Projectfolder_image, 'background.jpg')
 Body_Robot = os.path.join(Projectfolder_image, 'Body.png')
