@@ -1,5 +1,28 @@
 # RRT-star_pygame
 
+[//]: # (Symbols we can use for folder structure  │  ├  ─  └)
+The package is organized in the following manner:
+```
+RRT
+ │
+ │ 
+ │
+ ├─── README.md        
+ │           
+ │
+ ├─── code
+ │     ├─── main.py
+ │     │─── Robot_bicycle_model.py 
+ │     └─── RRT_Star.py
+ │
+ │
+ └── image
+      └─── ....png
+
+
+```
+ 
+
 This repository contains the source code of a sampling-based motion planning to autonomously move a robot along a trajectory in a static environment in a parking lot scenario. Both RRT and RRT* single query path planning algorithms were implemented without the use of a planner module, and investigated. A PD controller allows the robot, represented by a kinematic bicycle model, to follow the computed path.
 
 The RRT method and (visualisation using Pygame) were implemented by following a [video tutorial](https://www.youtube.com/watch?v=TzfNzqjJ2VQ). However, the RRT* method and the bicycle model and controller have been implemented without following any tutorials.
@@ -21,8 +44,22 @@ A window will appear in which the simulation will start to run. At each iteratio
 
 
 <p align="middle">
-  <img src="image/RRT star 3000 iterations.PNG"/>
+  <img src="image/RRT star 3000 iterations.PNG" width="400" height="400"/>
 </p>
 
- 
+Once the path is found, RRT* allows for rerooting until the shortest path is obtained. The bicycle then appears on the simulation and start following the generated path in order to reach the goal location. Here is what it looks like when the path has been found and the bicycle starts moving:
+
+<p align="middle">
+  <img src="image/bicyclemodelfollowpath.PNG" width="400" height="400"/>
+</p>
+
+The simulation stops once the goal is reached by the bicycle. A list of metrics is then displayed on the command line as such:
+
+<p align="middle">
+  <img src="image/metrics.png" width="400" height="400"/>
+</p>
+
+## RRT Vs RRT*
+
+
  
