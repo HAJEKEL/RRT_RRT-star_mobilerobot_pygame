@@ -3,7 +3,7 @@
 [//]: # (Symbols we can use for folder structure  │  ├  ─  └)
 The package is organized in the following manner:
 ```
-RRT
+RRT-star_pygame
  │
  │ 
  │
