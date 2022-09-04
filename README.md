@@ -22,6 +22,7 @@ RRT
 
 ```
  
+<p align="justify">
 
 This repository contains the source code of a sampling-based motion planning to autonomously move a robot along a trajectory in a static environment in a parking lot scenario. Both RRT and RRT* single query path planning algorithms were implemented without the use of a planner module, and investigated. A PD controller allows the robot, represented by a kinematic bicycle model, to follow the computed path.
 
@@ -57,6 +58,8 @@ The simulation stops once the goal is reached by the bicycle. A list of metrics 
 
 <p align="middle">
   <img src="image/metrics.png" width="400" height="400"/>
+</p>
+
 </p>
 
 ## RRT Vs RRT*
