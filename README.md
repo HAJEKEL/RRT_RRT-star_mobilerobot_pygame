@@ -1,4 +1,4 @@
-# RRT-star_pygame
+# Smart Parking: Navigating the Future with RRT and RRT* Algorithms
 
 [//]: # (Symbols we can use for folder structure  │  ├  ─  └)
 The package is organized in the following manner:
